@@ -30,10 +30,10 @@
             </div>
             <div class="input-group">
                 <label for="">Your message</label>
-                <textarea  rows="5" placeholder="enter your message"></textarea>
+                <textarea  rows="5" placeholder="enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
                 <span id="message-error"></span>
             </div>
-            <button>submit</button>
+            <button onclick="return validateForm()">submit</button>
             <span id="submit-error"></span>
         </form>
     </div>
